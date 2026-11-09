@@ -2,11 +2,12 @@
 
 ## Visão geral
 
-Projeto de estudo em Next.js (App Router) com React. O conteúdo e a interface são em português (`lang="pt-BR"`). Hoje é uma única página que lista nomes de macacos a partir de um array fixo, sem backend nem banco de dados.
+Projeto de estudo em Next.js (App Router) com React. O conteúdo e a interface são em português (`lang="pt-BR"`). Hoje é uma única página "Em construção" para a reconstrução do TabNews do curso.dev com agentes de IA. Ela mostra o total de conteúdos publicados no TabNews, lido da API pública a cada acesso, e dispara confete ao carregar. Não há backend nem banco de dados próprios.
 
 ## Estrutura
 
-- `app/page.js`: página principal.
+- `app/page.js`: página principal (Server Component que busca o total na API do TabNews, sem cache).
+- `app/confete.js`: Client Component com a animação de confete (`react-confetti`).
 - `app/layout.js`: layout raiz e `metadata`.
 - `app/globals.css`: estilos globais.
 
